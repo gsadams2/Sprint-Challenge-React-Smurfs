@@ -12,10 +12,14 @@ class Smurfs extends Component {
             return (
               <Smurf
                 name={smurf.name}
+                history={this.props.history}
                 id={smurf.id}
                 age={smurf.age}
                 height={smurf.height}
                 key={smurf.id}
+                deleteSmurf={this.props.deleteSmurf}
+                smurf={smurf}
+                setUpdateForm={this.props.setUpdateForm}
               />
             );
           })}
